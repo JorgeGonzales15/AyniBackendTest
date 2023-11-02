@@ -18,7 +18,7 @@ public class AyniBackendApplication {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/v1").allowedOrigins("https://monorail.proxy.rlwy.net:59822");
+                registry.addMapping("*").allowedOrigins("*").allowedHeaders("*").allowedMethods("*");
             }
         };
     }
